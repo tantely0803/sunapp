@@ -1,0 +1,5 @@
+{
+    "NSCameraUsageDescription": "SUN APP utilise la caméra de votre téléphone pour que vous puissiez prendre des photos de profils",
+    "NSLocationWhenInUseUsageDescription": "SUN APP utilise votre localisation pour vous mettre en contact avec des patients présentant une pathologie similaire",
+    "NSPhotoLibraryUsageDescription": "SUN APP utilise votre gallerie de photo pour vous permettre de choisir une photo de profil"
+}

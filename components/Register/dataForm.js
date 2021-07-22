@@ -1,0 +1,97 @@
+export const formPatients = [
+    {
+        type: 'name',
+        name: 'name',
+        label: 'Prénom',
+        placeholder: 'ex: Sunny',
+        password: false,
+    },
+    {
+        name: 'surname',
+        type: 'nom',
+        label: 'Nom',
+        placeholder: 'ex: Sun',
+        password: false,
+    },
+    {
+        name: 'pseudo',
+        type: 'pseudo',
+        label: 'Pseudo',
+        placeholder: 'ex: sunner',
+        password: false,
+    },
+    {
+        name: 'email',
+        type: 'email',
+        label: 'Adresse email',
+        placeholder: 'ex: sun@mail.fr',
+        password: false,
+    },
+    {
+        name: 'password',
+        type: 'password',
+        label: 'Mot de passe',
+        placeholder: '••••••••',
+        password: true,
+    },
+    {
+        name: 'confirm_password',
+        type: 'confirm_password',
+        label: 'Confirmation du mot de passe',
+        placeholder: '••••••••',
+        password: true,
+    },
+];
+
+export const formAsso = [
+    {
+        type: 'nom',
+        name: 'name',
+        label: "Nom de l'association",
+        placeholder: 'ex: Sun',
+        password: false,
+    },
+    {
+        type: 'pseudo',
+        name: 'name_president',
+        label: 'Nom du président',
+        placeholder: 'Barbara Cotilla',
+        password: false,
+    },
+    {
+        type: 'dropdown',
+        name: 'diseases',
+        label: 'Maladie supporté',
+        value: [],
+        password: false,
+        multi: true,
+    },
+    {
+        type: 'zipcode',
+        name: 'address',
+        label: 'Adresse postal',
+        placeholder: '1 rue du kiffe, 75001, Paris',
+        password: false,
+    },
+    {
+        type: 'email',
+        name: 'email',
+        label: 'Adresse email',
+        placeholder: 'ex: sun@mail.fr',
+        password: false,
+    },
+    {
+        type: 'password',
+        name: 'password',
+        label: 'Mot de passe',
+        placeholder: '••••••••',
+        password: true,
+    },
+    {
+        type: 'confirm_password',
+        name: 'confirm_password',
+        label: 'Confirmation du mot de passe',
+        placeholder: '••••••••',
+        password: true,
+    },
+];

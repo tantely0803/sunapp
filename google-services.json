@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "370896154694",
+    "project_id": "sunny-server-8335f",
+    "storage_bucket": "sunny-server-8335f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370896154694:android:ef12b3ce176baabde41a47",
+        "android_client_info": {
+          "package_name": "fr.sun.sunapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370896154694-blmh4v1pme5ktdecle4dpidakbaj613m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2XGUe6qd1KPU2IsW5f36ItL50kO7wlKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370896154694-blmh4v1pme5ktdecle4dpidakbaj613m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

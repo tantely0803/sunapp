@@ -1,14 +1,19 @@
 {
   "expo": {
-    "name": "react-native",
-    "slug": "react-native",
-    "version": "1.0.0",
+    "name": "SUN APP",
+    "slug": "sunapp",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "3.4.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon-app.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splashscreen.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#8A49F8"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,16 +22,62 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+      "bundleIdentifier": "fr.sun.sunapp",
+      "config": {
+        "googleMapsApiKey": "AIzaSyA64x-b_7QGVRgumfNkEwACLJylkQyFPLc"
+      },
+      "infoPlist": {
+        "NSCameraUsageDescription": "SUN APP use the camera to allow you to take profile picture",
+        "NSLocationWhenInUseUsageDescription": "SUN APP uses your location to put you in contact with patients with similar pathology.",
+        "NSPhotoLibraryUsageDescription": "SUN APP uses your library to allow you to pick a profile picture"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "android": {
+      "package": "fr.sun.sunapp",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyD6-AUkIMd_0vhuZqd9xy3pGViMdf-fShw"
+        }
+      },
+      "splash": {
+        "resizeMode": "native"
+    },
+    
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "MANAGE_DOCUMENTS",
+        "READ_EXTERNAL_STORAGE",
+        "READ_PHONE_STATE",
+        "WAKE_LOCK",
+        "WRITE_EXTERNAL_STORAGE",
+        "com.google.android.c2dm.permission.RECEIVE",
+        "com.google.android.gms.permission.ACTIVITY_RECOGNITION",
+        "com.google.android.providers.gsf.permission.READ_GSERVICES"
+      ],
+      "versionCode": 24
+    },
+    "hooks": {
+        "postPublish": [
+          {
+            "file": "sentry-expo/upload-sourcemaps",
+            "config": {
+              "organization": "sunny",
+              "project": "sunnymobile",
+              "authToken": "2e6d4203d4fd4a91b82353335b8583f5ff6267e10dfa4282840601bd2cb8efb2"
+            }
+          }
+        ]
+      },
+    "androidStatusBar": {
+      "translucent": false
+    },
+    "plugins": [
+      "sentry-expo"
+    ]
+  },
+  "locales": {
+    "fr": "./languages/fr.json"
   }
 }
